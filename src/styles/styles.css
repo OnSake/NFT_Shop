@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --bg-color: #010101;
+  --pink-color: #7000ff;
+  --white-text-color: #fff;
+  --grey-text-color: #d2d2d2;
+  --menu-color: #09070b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--white-text-color);
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(17, 14, 23, 0.53);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(159, 37, 255, 0.4);
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  align-items: center;
+  gap: 925px;
+}
+
+header .left p {
+  font-weight: 600;
+  font-size: 36pt;
+  cursor: pointer;
+}
+
+header .left span {
+  color: var(--pink-color);
+}
+
+header .navbar ul {
+  display: flex;
+  gap: 43px;
+}
+
+header .navbar ul li a {
+  color: var(--white-text-color);
+  text-transform: capitalize;
+}
+
+header .navbar .connect_button {
+  width: 130px;
+  height: 41px;
+  background: linear-gradient(
+    45deg,
+    rgba(159, 37, 255, 0.3) 30%,
+    rgba(37, 72, 255, 0.3)
+  );
+  padding: 8px 30px;
+  border-radius: 10px;
+}
+
+header .navbar .connect_button:hover {
+  background: linear-gradient(
+    45deg,
+    rgba(159, 37, 255, 0.6) 30%,
+    rgba(37, 72, 255, 0.6)
+  );
+  transition: 0.3s;
+}
+
+.ellipse1 {
+  width: 1027px;
+  height: 1027px;
+  background-color: rgba(159, 37, 255, 0.6);
+  border-radius: 100%;
+  filter: blur(500px);
+  position: relative;
+  top: -300px;
+  left: -800px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.home {
+  width: 100vw;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.home .top {
+  display: flex;
+  gap: 300px;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.home .bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.home .left h1 {
+  font-weight: 600;
+  font-size: 72px;
+}
+
+.home .left h1 span {
+  background: linear-gradient(
+    45deg,
+    rgba(159, 37, 255, 0.6) 35%,
+    rgba(37, 72, 255, 0.6)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home .left p {
+  color: var(--grey-text-color);
+  font-size: 20px;
+}
+
+.marketplace {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 100px;
+}
+
+.marketplace_title {
+  display: flex;
+  font-size: 36pt;
+  text-transform: capitalize;
+  justify-content: center;
+  align-items: center;
+}
+
+.marketplace_header {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 33px;
+}
+
+.marketplace_header li {
+  width: 125px;
+  height: 46px;
+  background: linear-gradient(
+    45deg,
+    rgba(17, 14, 23, 0.53),
+    rgba(17, 14, 23, 0.28)
+  );
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active_marketplace {
+  border: 2px solid #7000ff;
+}
+
+.ellipse2 {
+  position: relative;
+  width: 1097px;
+  height: 1097px;
+  background-color: rgba(159, 37, 255, 0.2);
+  border-radius: 100%;
+  filter: blur(200px);
+  top: -500px;
+  right: -1400px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.ellipse3 {
+  position: relative;
+  width: 1097px;
+  height: 1097px;
+  background-color: rgba(37, 72, 255, 0.2);
+  border-radius: 100%;
+  filter: blur(400px);
+  top: -1000px;
+  right: -1400px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.cards {
+  margin-top: 20px;
+}
+
+.top,
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.top {
+  margin-bottom: 30px;
+}
+.card {
+  width: 50%px;
+  height: 50%px;
+  background-color: rgba(17, 14, 23, 0.35);
+  border-radius: 20px;
+  transition: 0.3s;
+  /*  */
+}
+
+.card:hover {
+  box-shadow: 0px 5px 25px#3c0881;
+}
+
+.img_card {
+  width: 256px;
+  height: 289px;
+  padding: 15px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.title_card {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.user_card {
+  margin-left: 15px;
+  margin-bottom: 22px;
+}
